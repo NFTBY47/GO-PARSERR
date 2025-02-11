@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Expression Parser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <h1>Go Expression Parser</h1>
+        <input type="text" id="expressionInput" placeholder="Введите выражение">
+        <button id="parseButton">Вычислить</button>
+        <div id="resultArea">Результат: </div>
+
+        <button id="historyButton">История</button>
+    </div>
+
+    <div id="historyMenu" class="history-menu">
+        <div class="history-menu-header">
+            <h2>История вычислений</h2>
+            <span id="closeHistoryMenu" class="close-button"><i class="fas fa-times"></i></span>
+        </div>
+        <ul id="historyList">
+            <!-- История будет добавляться сюда -->
+        </ul>
+        <button id="clearHistoryButton">Очистить историю</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
